@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState<any>(null);
   const [showPopup, setShowPopup] = useState(false);
 
   const handleMouseMove = () => {
